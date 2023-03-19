@@ -1,0 +1,825 @@
+@charset "UTF-8";
+/* Common */
+html {
+	height: 100%;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+	margin: 0;
+	padding: 0;
+}
+
+body, input, textarea, select, button, table {
+	font-size: 13px;
+	line-height: 20px;
+	font-family: '나눔고딕','nanumgothic','AppleSDGothicNeo-Regular',Helvetica,sans-serif;
+	color: #252525;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	word-break: keep-all;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+em, address {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+hr {
+	display: none !important;
+}
+
+.u_skip, .blind {
+	overflow: hidden !important;
+	position: absolute !important;
+	clip: rect(0 0 0 0) !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+}
+
+/* 이벤트 - 공통 */
+.promotion_wrap {
+	min-width: 320px;
+}
+
+.content {
+	margin-top: 6px;
+	width: 100%;
+	min-width: 320px;
+	word-break: keep-all;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.inner {
+	position: relative;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.mo {
+	display: none;
+}
+
+.event-mobile {
+	height: 100%;
+	-webkit-text-size-adjust: none;
+	background: #e9ecef !important;
+}
+
+.event-mobile .pc {
+	display: none;
+}
+
+.event-mobile .mo {
+	display: block;
+}
+
+.event-mobile .promotion_wrap {
+	min-width: 320px;
+}
+
+.event-mobile .content {
+	font-size: 14px;
+	font-family: 'AppleSDGothicNeo-Regular', Helvetica, sans-serif;
+	color: #252525;
+	line-height: 18px;
+	min-width: 0;
+	margin-top: 0;
+	min-width: 320px;
+}
+
+.event-mobile .content .inner {
+	width: 300px;
+}
+
+/* border-radius */
+.bold {
+	font-weight: bold;
+}
+
+.color_point {
+	font-weight: bold;
+	color: #f1791a;
+}
+
+.mo_show {
+	display: none;
+}
+
+/* spot */
+.spot {
+	position: relative;
+	height: 900px;
+	background: #f8efde url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/bg_spot.png") no-repeat 50% 0;
+	background-size: 1920px 900px;
+	-webkit-background-size: 1920px 900px;
+}
+
+.section_event_summary {
+	padding-top: 80px;
+	width: 605px;
+	height: 247px;
+	margin: 0 auto;
+	background: #fff url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/section_summary.png") 50% 80px no-repeat;
+	background-size: 605px 247px;
+	-webkit-background-size: 605px 247px;
+}
+
+/* section_info*/
+.section_info {
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.section_info .inner {
+	padding: 80px 0;
+	border-bottom: 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.section_info .title {
+	width: 120px;
+	height: 52px;
+	margin: 0 auto 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 120px 52px;
+	-webkit-background-size: 120px 52px;
+}
+
+.section_info .btn_link {
+	display: block;
+	margin: 50px auto 0;
+	width: 500px;
+	height: 96px;
+	background-size: 500px 96px;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.section_info.event_01 .title {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/section_title_01.png);
+}
+
+.section_info.event_01 .btn_link {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/section_btn_01.png);
+}
+
+.section_info.event_02 .inner {
+	border: 0;
+}
+
+.section_info.event_02 .title {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/section_title_02.png);
+}
+
+.section_info.event_02 .info_point_text {
+	margin: 8px 0;
+	height: 271px;
+	background: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/table_text.png) no-repeat 50% 50%;
+	background-size: 348px 271px;
+	-webkit-background-size: 348px 271px;
+}
+
+.section_info.event_02 .btn_link {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/section_btn_02.png);
+}
+
+/* info_list 공통 */
+.info_list {
+	width: 590px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 32px;
+	color: #333;
+}
+
+.info_list:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.info_list dt {
+	float: left;
+	min-width: 118px;
+	color: #f1791a;
+	letter-spacing: -0.6px;
+	font-weight: bold;
+}
+
+.info_list dd {
+	overflow: hidden;
+	margin-bottom: 12px;
+	letter-spacing: -1px;
+	word-break: keep-all;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.info_list dd:last-child {
+	margin-bottom: 0 !important;
+}
+
+.info_list dd .info_text {
+	padding-left: 18px;
+}
+
+.info_list p + .sub_list {
+	margin-top: 8px;
+}
+
+.info_list .sub_list + .sub_list {
+	margin-top: 8px;
+}
+
+.info_list .sub_list.point li {
+	margin-bottom: 0;
+}
+
+.info_list .sub_list li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 12px;
+}
+
+.info_list .sub_list li:last-child {
+	margin-bottom: 0;
+}
+
+.info_list .sub_list li .mark {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.info_list .point_text {
+	color: #ff0000;
+}
+
+.info_list .bold_text {
+	font-weight: bold;
+}
+
+.info_list .refer_text {
+	margin-top: 8px;
+	font-weight: bold;
+}
+
+.section_card {
+	background-color: #fffaee;
+}
+
+.section_card .inner {
+	padding: 80px 0;
+}
+
+.section_card .inner .section_title {
+	width: 180px;
+	height: 27px;
+	background: #fffaee url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/pc_card_title.png") no-repeat 50% 0;
+	background-size: 180px 27px;
+	-webkit-background-size: 180px 27px;
+	margin: 0 auto 30px;
+}
+
+.section_card .inner .event_card_box {
+	position: relative;
+	width: 920px;
+	height: 918px;
+	background: #fffaee url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/bg_card_01.png") no-repeat 50% 0;
+	background-size: 920px 918px;
+	-webkit-background-size: 920px 918px;
+	margin: 0 auto;
+}
+
+.section_card .inner .event_card_box.box_02 {
+	height: 843px;
+	background: #fffaee url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/bg_card_02.png") no-repeat 50% 80px;
+	background-size: 920px 843px;
+	-webkit-background-size: 920px 843px;
+	padding-top: 80px;
+}
+
+.section_card .inner .card_link {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 96px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* section_notice */
+.section_notice {
+	color: #555;
+	font-size: 14px;
+	letter-spacing: -1px;
+	line-height: 24px;
+	background-color: #fff;
+	word-break: keep-all;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.section_notice .inner {
+	padding: 60px 0;
+}
+
+.section_notice .title {
+	position: relative;
+	padding-left: 27px;
+	color: #f1791a;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -0.53px;
+	margin-bottom: 20px;
+}
+
+.section_notice .title:before {
+	content: '';
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/ico_notice.png") no-repeat;
+	background-size: 20px 20px;
+	-webkit-background-size: 20px 20px;
+}
+
+.section_notice .notice_list {
+	margin-bottom: 30px;
+}
+
+.section_notice .font_normal {
+	font-weight: normal;
+}
+
+.section_notice .emphasis_list_01 {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+.section_notice .emphasis_list_01 li {
+	padding-left: 28px;
+	text-indent: -28px;
+	margin-bottom: 6px;
+}
+
+.section_notice .emphasis_list_01 li:last-child {
+	margin-bottom: 0;
+}
+
+.section_notice .emphasis_list_02 {
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: -1px;
+	margin-top: 10px;
+}
+
+.section_notice .emphasis_list_02 li {
+	margin-bottom: 6px;
+}
+
+.section_notice .emphasis_list_02 li:last-child {
+	margin-bottom: 0;
+}
+
+.section_notice .emphasis_list_03 {
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -1px;
+	margin-top: 28px;
+	font-weight: bold;
+}
+
+.section_notice .emphasis_list_03 li {
+	margin-bottom: 6px;
+}
+
+.section_notice .emphasis_list_03 li:last-child {
+	margin-bottom: 0;
+}
+
+.section_notice .item {
+	position: relative;
+	padding: 0 0 6px 8px;
+}
+
+.section_notice .item:last-child {
+	padding: 0 0 0 8px;
+}
+
+.section_notice .item:before {
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 0;
+	width: 2px;
+	height: 2px;
+	border-radius: 2px;
+	background-color: #333;
+}
+
+.section_notice .item.mark:before {
+	content: '*';
+	left: -2px;
+	top: 0;
+	width: auto;
+	height: auto;
+	border-radius: 0;
+	background-color: #fff;
+}
+
+.section_notice .point_text {
+	color: #ff1700;
+}
+
+.section_banner {
+	padding: 20px 0;
+	background-color: #efeff0 !important;
+}
+
+.section_banner .inner {
+	width: 100% !important;
+	margin: 0;
+}
+
+.section_banner .link_card_more {
+	display: block;
+	background-color: #fff;
+	text-align: center;
+}
+
+.section_banner .link_card_more img {
+	width: 480px;
+	vertical-align: top;
+}
+
+.section_float_btn {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 300;
+}
+
+.section_float_btn .btn_card_more {
+	display: block;
+	height: 120px;
+	padding-top: 42px;
+	background-color: #212930;
+	font-size: 0;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.section_float_btn .btn_card_more .text {
+	display: inline-block;
+	width: 234px;
+	height: 36px;
+	background: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/img_btn_float_text.png) no-repeat 0 0;
+	background-size: 234px 36px;
+	vertical-align: middle;
+}
+
+.section_float_btn .btn_card_more::after {
+	display: inline-block;
+	width: 16px;
+	height: 26px;
+	margin-left: 20px;
+	background: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/pc/icon_btn_float_arrow.png) no-repeat 0 0;
+	background-size: 16px 26px;
+	vertical-align: middle;
+	content: '';
+}
+
+.section_float_btn.show {
+	display: block;
+}
+
+/* footer영역 */
+/* .footer {
+	position: relative;
+	clear: both;
+	min-width: 1130px;
+	background-color: #f6f7f9;
+	font-size: 12px;
+	text-align: center;
+} */
+
+
+/* 모바일 css */
+.event-mobile {
+	/* section_event_summary */
+	/* section_info*/
+	/* info_list 공통 */
+	/* section_card*/
+	/* section_notice */
+}
+
+.event-mobile .mo_show {
+	display: block;
+}
+
+.event-mobile .pc_show {
+	display: none;
+}
+
+.event-mobile .spot {
+	height: 509px;
+	background: #f6edd8 url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/bg_spot.png") 50% 0 no-repeat;
+	background-size: 667px 509px;
+	-webkit-background-size: 667px 509px;
+}
+
+.event-mobile .spot:before {
+	bottom: 91px;
+}
+
+.event-mobile .spot:after {
+	height: 87px;
+}
+
+.event-mobile .section_event_summary {
+	width: 100%;
+	height: 139px;
+	background: #fff url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/section_summary.png") 50% 40px no-repeat;
+	background-size: 340px 139px;
+	-webkit-background-size: 340px 139px;
+	padding-top: 40px;
+}
+
+.event-mobile .section_info .inner {
+	padding: 40px 0;
+}
+
+.event-mobile .section_info .title {
+	width: 64px;
+	height: 28px;
+	background-size: 64px 28px;
+	-webkit-background-size: 64px 28px;
+	margin-bottom: 20px;
+}
+
+.event-mobile .section_info .btn_link {
+	width: 224px;
+	height: 40px;
+	margin: 20px auto 0;
+	background-size: 224px 40px;
+}
+
+.event-mobile .section_info.event_01 .title {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/section_title_01.png);
+}
+
+.event-mobile .section_info.event_01 .btn_link {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/section_btn_01.png);
+}
+
+.event-mobile .section_info.event_02 .title {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/section_title_02.png);
+}
+
+.event-mobile .section_info.event_02 .btn_link {
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/section_btn_02.png);
+}
+
+.event-mobile .section_info.event_02 .info_point_text {
+	height: 179px;
+	margin: 8px 0;
+	background-image: url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/table_text.png);
+	background-position: right;
+	background-size: 231px 179px;
+	-webkit-background-size: 231px 179px;
+}
+
+.event-mobile .info_list {
+	width: 300px;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.event-mobile .info_list dt {
+	min-width: 70px;
+	letter-spacing: -0.5px;
+}
+
+.event-mobile .info_list dd {
+	letter-spacing: -0.6px;
+	margin-bottom: 10px;
+}
+
+.event-mobile .info_list dd .info_text {
+	padding-left: 0;
+}
+
+.event-mobile .info_list p + .sub_list {
+	margin-top: 2px;
+}
+
+.event-mobile .info_list .sub_list li {
+	padding-left: 12px;
+	margin-bottom: 0;
+}
+
+.event-mobile .info_list .bold_text.em {
+	font-size: 14px;
+	letter-spacing: -0.58px;
+}
+
+.event-mobile .info_list .refer_text {
+	margin-top: 0;
+}
+
+.event-mobile .section_card .inner {
+	padding: 40px 0;
+}
+
+.event-mobile .section_card .inner .section_title {
+	width: 116px;
+	height: 19px;
+	background: #fffaee url(https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/mo_card_title.png) no-repeat 50% 0;
+	background-size: 116px 19px;
+	-webkit-background-size: 116px 19px;
+	margin: 0 auto 24px;
+}
+
+.event-mobile .section_card .inner .event_card_box {
+	background: url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/bg_card_01.png") 50% 0 no-repeat;
+	background-size: 299px 505px;
+	-webkit-background-size: 299px 505px;
+	width: 299px;
+	height: 505px;
+}
+
+.event-mobile .section_card .inner .event_card_box.box_02 {
+	background: url("https://campaign.naver.com/staticfiles/npay-woori_2210/PC/img/mo/bg_card_02.png") 50% 40px no-repeat;
+	background-size: 299px 472px;
+	-webkit-background-size: 299px 472px;
+	height: 472px;
+	padding-top: 40px;
+}
+
+.event-mobile .section_card .inner .card_link {
+	width: 224px;
+	height: 40px;
+}
+
+.event-mobile .section_notice {
+	font-size: 13px;
+	letter-spacing: -0.54px;
+	line-height: 19px;
+}
+
+.event-mobile .section_notice .inner {
+	padding: 40px 0;
+}
+
+.event-mobile .section_notice .title {
+	padding-left: 28px;
+	margin-bottom: 25px;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+}
+
+.event-mobile .section_notice .item {
+	padding-left: 6px;
+}
+
+.event-mobile .section_notice .item:last-child {
+	padding: 0 0 0 6px;
+}
+
+.event-mobile .section_notice .item:before {
+	top: 7px;
+}
+
+.event-mobile .section_notice .item .info {
+	margin-top: 9px;
+	padding-left: 12px;
+	position: relative;
+}
+
+.event-mobile .section_notice .item .info + .info {
+	margin-top: 9px;
+}
+
+.event-mobile .section_notice .item.mark:before {
+	left: -1px;
+	top: 0;
+}
+
+.event-mobile .section_notice .emphasis_list_01 {
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: -0.7px;
+}
+
+.event-mobile .section_notice .emphasis_list_01 li {
+	padding-left: 18px;
+	text-indent: -18px;
+	margin-bottom: 12px;
+}
+
+.event-mobile .section_notice .emphasis_list_01 li:last-child {
+	margin-bottom: 0;
+}
+
+.event-mobile .section_notice .emphasis_list_02 {
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: -0.7px;
+	margin-top: 6px;
+}
+
+.event-mobile .section_notice .emphasis_list_02 li {
+	padding-left: 11px;
+	text-indent: -11px;
+	margin-bottom: 12px;
+}
+
+.event-mobile .section_notice .emphasis_list_02 li:last-child {
+	margin-bottom: 0;
+	margin-top: -10px;
+}
+
+.event-mobile .section_notice .emphasis_list_03 {
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: -0.7px;
+	margin-top: 25px;
+}
+
+.event-mobile .section_notice .emphasis_list_03 li {
+	margin-bottom: 4px;
+}
+
+.event-mobile .section_notice .emphasis_list_03 li:last-child {
+	margin-bottom: 0;
+}
+
+.event-mobile .section_notice .emphasis_list_03 .emphasis_item {
+	position: relative;
+	padding-left: 10px;
+}
+
+.event-mobile .section_notice .emphasis_list_03 .emphasis_item::before {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 2px;
+	height: 2px;
+	border-radius: 2px;
+	background-color: #333;
+}
+
+.event-mobile .section_notice .emphasis_list_03 .emphasis_item .item_title {
+	display: block;
+	margin: 25px 0 10px -12px;
+}
+
+.event-mobile .section_notice .emphasis_list_03 .list_item {
+	text-indent: -18px;
+	padding-left: 18px;
+}
+
+.event-mobile .footer {
+	min-width: 0;
+	background-color: #dcdddf;
+	margin-top: 5px;
+	padding: 34px 0 87px;
+	line-height: 18px;
+}
+

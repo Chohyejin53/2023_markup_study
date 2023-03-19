@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 60px;   
+            border: 5px;
+            list-style: none;
+        }
+        div {
+            display: block;
+        }
+
+        .box_wrap + .box_wrap{ 
+            margin-top: 10%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <div>
+            <ul>
+                <li class="title" style="position: relative; background-color: yellow; padding-left: 40px; margin-left: 10px;"> 
+                    <span style="position: absolute; top: 0; left: 0;  background-color: rgb(0, 38, 255); opacity: .5;">12.</span> 
+                    빨간
+                </li>
+                <p class="title">파란</p>
+                <li class="title">파란</li>
+            </ul>
+            <div class="box_wrap" style="position: relative;">
+                <div  style="position: relative; border: rgb(238, 1, 1) 1px solid; width: 600px; height: 600px; ">
+                    <div style="position: absolute; top: 0; left: 0; width: 300px; height: 300px; border: black 3px solid;"></div>
+                </div>
+                <div  style=" position: relative; border: rgb(238, 1, 1) 1px solid; width: 600px; height: 600px; ">
+                    <div style="background-color: yellow; position: absolute; top: 0; left: 0;  width: 300px; height: 300px; border: black 3px solid;"></div>
+                </div>
+            </div>
+            <div class="box_wrap">
+
+            </div>
+           
+
+            <div style="position: relative; border: rgb(238, 1, 1) 1px solid; width: 600px; height: 600px; ">
+                <div style="position: absolute; top: 0; left: 0; width: 300px; height: 300px; border: black 3px solid;"></div>
+            </div>
+
+
+            <div style="position: relative; border: rgb(238, 1, 1) 1px solid; width: 600px; height: 600px; ">
+                <div style="position: relative; width: 300px; height: 300px; border: black 3px solid;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
